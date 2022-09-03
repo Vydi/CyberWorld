@@ -1,0 +1,52 @@
+{% load static %}
+
+{% url 'index' as index %}
+{% url 'blog' as blog %}
+{% url 'products' as products %}
+{% url 'author' as author %}
+{% url 'create' as create %}
+{% url 'edit_cabinet' as edit_cabinet %}
+{% url 'login' as login %}
+
+
+<title>{% block title %} {% endblock %}</title>
+
+<head>
+    <meta charset="utf-8">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+          rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+
+
+    <!-- Additional CSS Files -->
+
+    <link rel="stylesheet" href="{% static  'css/templatemo-liberty-market.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.css' %}">
+
+</head>
+
+<body>
+{% include 'inc/_nav.html' %}
+
+
+<div>{% block content %} {% endblock %}</div>
+
+
+<div>{% include 'inc/_sidebar.html' %}
+</div>
+
+</body>
+<!-- Scripts -->
+<!-- Bootstrap core JavaScript -->
+<script src='{% static "/vendor/jquery/jquery.min.js" %}'></script>
+
+<script src='{% static "bootstrap/js/bootstrap.min.js" %}'></script>
+
+<script src='{% static "/js/isotope.min.js" %}'></script>
+<script src='{% static "/js/owl-carousel.js" %}'></script>
+
+<!--<script src="static/js/tabs.js"></script>-->
+<!--<script src="static/js/popup.js"></script>-->
+<script src='{% static "/js/custom.js" %}'></script>

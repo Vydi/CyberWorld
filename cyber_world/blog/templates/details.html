@@ -1,0 +1,126 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+
+{% block content %}
+<body>
+
+<div class="page-heading normal-space">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h6>магазин</h6>
+                <h2>{{posts_item.title}}</h2>
+
+                <div class="buttons">
+                    <div class="main-button">
+                        <a href="explore.html">Explore Our Items</a>
+                    </div>
+                    <div class="border-button">
+                        <a href="create.html">Create Your NFT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="item-details-page">
+
+    <div class="container">
+        <div class="post_detail">
+            <div class="section-heading">
+                <div class="line-dec"></div>
+                <h2>Детали <em>Сознания</em> Здесь.</h2>
+            </div>
+            {%if posts_item.photo%}
+            <img src="{{posts_item.photo.url}}" alt=""
+                 style="border-radius: 20px; float:left;  margin: 0px 20px 20px 0; width:60%">
+            {% endif %}
+            <div>
+                <h4>{{posts_item.title}}</h4>
+                <span class="author">
+                        {%if posts_item.author.profile.photo%} <img src="{{posts_item.author.profile.photo.url}}" alt=""
+                                                                    style="max-width: 50px; border-radius: 50%; object-fit: cover;">
+                            {% endif %}
+                        <h6>{{posts_item.author}}<br><a href="#">@{{posts_item.author}}</a></h6>
+                    </span>
+                <p>{{posts_item.content|safe}}</p>
+            </div>
+
+            <span style="font-size: 15px; color: #7453fc;">{{ posts_item.created_at|date:"d.m.Y" }} <br> Просмотры: {{ posts_item.views }}</span>
+        </div>
+        {% if user.is_authenticated %}
+        <div class="col-md-8">
+            <br>
+            <div class="mini-heading"><h3>Комментарий иной раз — гораздо достойнее цитаты!</h3></div>
+            <form id="comment_post" method="post">
+                {% csrf_token %}
+                {{ form.author }}
+                {{ form.email }}
+                {{ form.body }}
+                <br>
+                <div class="comment_post-button">
+                    <br>
+                    <button type="submit">Отправить</button>
+                </div>
+
+            </form>
+
+        </div>
+        {% else %}
+        <br>
+        <br>
+        <h4 style="font-style: italic;
+                        color: #8668ff;
+                        margin-block-end: -60px;">
+            Комментарии могут оставлять только авторизованные пользователи</h4>
+        <div class="logout-button" style="margin-top: 60px;">
+                    <br>
+                    <a href="{% url 'login' %}" style="width:10%">Войти</a>
+                </div>
+        {% endif %}
+        <div class="commententries" style="margin-top: 100px;">
+            <h3>Комментарии: {{ posts_item.comments.all.count }}</h3>
+            {% if posts_item.comments.all.count == 0 %}
+            <br>
+            <h4 style="font-style: italic;
+                        color: #8668ff7d;">
+                Не всегда необходимо быть сложным, чтобы твои слова имели смысл.</h4>
+            {% endif %}
+
+
+            {% for comment in posts_item.comments.all %}
+            <div class="comment" style="margin-top: -80px;
+                                               ">
+                <section class="comment-details" style="background-color: #150e2ead;
+                                                border: 1px solid #404245;
+                                                border-radius: 20px;
+                                                padding: 30px;
+                                                display: flex;
+                                                margin-bottom: 30px;">
+                    <div class="author-name">
+                        <h4>{{ comment.author }}</h4>
+                        <div class="comment-body">
+                            <p>{{ comment.body }}</p>
+                        </div>
+                        <br>
+                        <p>{{comment.created_on.date|date:"d.m.Y" }}&nbsp;</p>
+                    </div>
+
+                </section>
+            </div>
+            {% endfor %}
+
+
+        </div>
+    </div>
+</div>
+
+</body>
+
+{% endblock %}

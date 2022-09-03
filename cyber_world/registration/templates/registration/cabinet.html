@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{%block title  %}
+Кабинет
+{%endblock%}
+
+
+{%block content %}
+
+<div class="page-heading normal-space">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h6>ТВОЙ ПРОФИЛЬ</h6>
+                    <h2>Проснись уже, {{ user.username }}
+                        {%if profile.photo%} <img src="{{profile.photo.url}}" alt=""
+                                                         style='width: 100px; height: 100px;
+                                                             border-radius: 50%; border: 1px solid #7453fc; object-fit: cover;'>
+                        {% endif %}
+                    </h2>
+
+
+                <div class="logout-button">
+                    <br>
+                    <a href="{% url 'logout' %}">Выход</a>
+                    <br><br>
+                    <a href="{% url 'create' %}">Создать запись</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="item-details-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-heading">
+                    <div class="line-dec"></div>
+                    <h2>Слово <em>редактирует</em> душу человека.</h2>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                {% if messages %}
+                {% for message in messages %}
+                {% if message.tags == 'error' %}
+                <div class="alert alert-danger" role="alert">
+                    {{message}}
+                </div>
+                {% else %}
+                <div class="alert alert-{{message.tags}}" role="alert">
+                    {{message}}
+                </div>
+                {% endif %}
+                {% endfor %}
+                {% endif %}
+                <form id="login" action="" method="post" enctype="multipart/form-data">
+                    <div class="row">
+                        {% csrf_token %}
+                        {{ user_form.as_p }}
+                        <label>{{profile_form.date_of_birth.label}}:</label>
+                        <p>{{ profile_form.date_of_birth }}</p>
+                        {%if profile_form.photo%}
+                        <div class="login-button-photo">
+                            <label>{{profile_form.photo.label}}:</label>
+                            {{ profile_form.photo}}
+                        </div>
+                        {%else%}
+                        <div class="login-button-photo">
+                            <label>{{profile_form.photo.label}}:</label>
+                            Нет фото
+                        </div>
+                        {%endif%}
+                        <div class="login-button">
+                            <br>
+                            <button type="submit">Сохранить</button>
+                        </div>
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock%}
+

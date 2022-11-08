@@ -7,8 +7,10 @@
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
-                    <a href="/" class="logo">
-                        <img src="{% static '/images/logo.png' %}" alt="">
+                    <a href="/" class="logo" style="color: #7453fc;
+                                                                                            font-size: 20px;
+                                                                                            font-weight: 800;">
+                        <img src="{% static '/images/logo.png' %}" alt="" style="width: 60px;"> CyberWorld
                     </a>
                     <!-- ***** Logo End ***** -->
 
@@ -16,10 +18,6 @@
                     <ul class="nav">
                         <li><a href="{% url 'index' %}" {% if request.path == index %} class="active" {% endif %}>Главная</a></li>
                         <li><a href="{% url 'blog' %}" {% if request.path ==  blog %} class="active" {% endif %}>Блог</a></li>
-                        <li><a href="{% url 'products' %}" {% if request.path ==  products %} class="active" {% endif %}>Продукты</a>
-                        </li>
-                        <li><a href="#" {% if request.path ==  author %} class="active" {% endif %}>Участники</a>
-                        </li>
                         {% if user.is_authenticated %}
                         <li><a href="{% url 'create' %}" {% if request.path == create %} class="active" {% endif %}>Создать</a></li>
                         {% endif %}

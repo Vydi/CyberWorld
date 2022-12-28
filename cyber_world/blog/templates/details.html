@@ -32,6 +32,7 @@
             <img src="{{posts_item.photo.url}}" alt=""
                  style="border-radius: 20px; float:left;  margin: 0px 20px 20px 0; width: 500px; height: 500px; object-fit: cover;">
             {% endif %}
+
             <div>
                 <h4>{{posts_item.title}}</h4>
                 <span class="author">
@@ -43,7 +44,16 @@
                 <p>{{posts_item.content|safe}}</p>
             </div>
 
-            <span style="font-size: 15px; color: #7453fc;">{{ posts_item.created_at|date:"d.m.Y" }} <br> Просмотры: {{ posts_item.views }}</span>
+            <span style="font-size: 15px; color: #7453fc;">
+                {% if user.is_authenticated and user == posts_item.author %}
+                 <a href="{{ posts_item.get_absolute_url }}update" style="font-size: 27px; color: #7453fc;">
+                    <u>Редактировать</u>  </a> <br>
+                {% endif %}
+                {% if user.is_authenticated and user == posts_item.author %}
+                 <a href="{{ posts_item.get_absolute_url }}delete" style="font-size: 27px; color: red;">
+                    <u>Удалить</u>  </a> <br>
+                {% endif %}
+                {{ posts_item.created_at|date:"d.m.Y" }} <br> Просмотры: {{ posts_item.views }}</span>
         </div>
         {% if user.is_authenticated %}
         <div class="col-md-8">
@@ -71,9 +81,9 @@
                         margin-block-end: -60px;">
             Комментарии могут оставлять только авторизованные пользователи</h4>
         <div class="logout-button" style="margin-top: 60px;">
-                    <br>
-                    <a href="{% url 'login' %}" style="width:10%">Войти</a>
-                </div>
+            <br>
+            <a href="{% url 'login' %}" style="width:10%">Войти</a>
+        </div>
         {% endif %}
         <div class="commententries" style="margin-top: 100px;">
             <h3>Комментарии: {{ posts_item.comments.all.count }}</h3>

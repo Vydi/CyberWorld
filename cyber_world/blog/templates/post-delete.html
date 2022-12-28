@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+Удаление
+{% endblock %}
+
+
+{% block content %}
+
+
+<div class="page-heading normal-space">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h6>Cyber_World</h6>
+                <h2>Поделись своей историей</h2>
+                <div class="buttons">
+                    <div class="main-button">
+                        <a href="{% url 'blog' %}"> Все истории</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="item-details-page">
+    <form id="login" action="" method="post" style="width:70%" enctype="multipart/form-data">
+        {% csrf_token %}
+        <p style="text-align: center;
+                    font-size: 24px;">Вы уверены, что хотите удалить статью "<u style="color:#7453fc;">
+            <a href="{{ post.get_absolute_url }}">{{ post.title }}</a></u>"?
+        </p>
+        <div class="login-button">
+            <div class="login-button">
+                <br>
+                <center>
+                    <button type="submit" style="background-color: red;color: #ffffff;width:30%; ">Удалить
+                        статью
+                    </button>
+                </center>
+            </div>
+        </div>
+    </form>
+</div>
+
+{% endblock %}

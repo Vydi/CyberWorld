@@ -1,8 +1,8 @@
 from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponseNotFound
 from django.shortcuts import render, redirect
-from django.views.generic import TemplateView, CreateView, DetailView, ListView
+from django.views.generic import TemplateView, CreateView, DetailView, ListView, UpdateView, DeleteView
 from django.views.generic.edit import FormMixin
 
 from .forms import PostsForm, CommentForm
@@ -17,6 +17,8 @@ class BlogView(ListView):
     model = Post
     context_object_name = 'all_posts'
     paginate_by = 10
+
+
 class Search(ListView):
     template_name = 'blog.html'
     context_object_name = 'posts_search'
@@ -103,3 +105,56 @@ class ViewPosts(FormMixin, DetailView):
 
         comment.save()
         return HttpResponseRedirect(self.request.path_info)
+
+
+class UpdatePost(LoginRequiredMixin, UpdateView):
+    login_url = 'login'
+    model = Post
+    template_name = 'create.html'
+    # fields = ['title', 'content', 'category', 'photo', 'tags']
+    form_class = PostsForm
+
+    def dispatch(self, request, *args, **kwargs):
+        post = Post.objects.get(slug=self.kwargs['slug'])
+        print(request.user, post.author)
+        if request.user != post.author or not request.user.is_authenticated:
+            return self.handle_no_permission()
+        else:
+            return super().dispatch(request, *args, **kwargs)
+
+
+class DeletePost(DeleteView, LoginRequiredMixin):
+    login_url = 'login'
+    model = Post
+    template_name = 'post-delete.html'
+    success_url = '/blog/'
+
+    # fields = ['title', 'content', 'category', 'photo', 'tags']
+    # form_class = PostsForm
+
+    def dispatch(self, request, *args, **kwargs):
+        post = Post.objects.get(slug=self.kwargs['slug'])
+        print(request.user, post.author)
+        if request.user != post.author or not request.user.is_authenticated:
+            return self.handle_no_permission()
+        else:
+            return super().dispatch(request, *args, **kwargs)
+
+
+class Profile_Post(ListView):
+    template_name = 'blog.html'
+    context_object_name = 'posts_item'
+    paginate_by = 4
+    allow_empty = False
+
+    def get_queryset(self):
+        # print('*'*20, self.kwargs['slug'])
+        # print('*'*20, Post.objects.filter(author__username=self.kwargs['slug']))
+        return Post.objects.filter(author__username=self.kwargs['slug'])
+
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['all_posts'] = Post.objects.filter(author__username=self.kwargs['slug'])
+
+        print('*' * 20, context)
+        return context

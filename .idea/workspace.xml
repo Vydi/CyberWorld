@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="11cb15ae-5395-4634-b53d-a6b3cc2cc7c6" name="Changes" comment="version 1.0">
+      <change afterPath="$PROJECT_DIR$/cyber_world/blog/templates/post-delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cyber_world/blog/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/cyber_world/blog/templates/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cyber_world/blog/templates/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/cyber_world/blog/templates/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cyber_world/blog/templates/details.html" beforeDir="false" afterPath="$PROJECT_DIR$/cyber_world/blog/templates/details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cyber_world/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/cyber_world/blog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cyber_world/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cyber_world/blog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cyber_world/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/cyber_world/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cyber_world/registration/templates/registration/cabinet.html" beforeDir="false" afterPath="$PROJECT_DIR$/cyber_world/registration/templates/registration/cabinet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cyber_world/registration/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cyber_world/registration/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cyber_world/shop/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cyber_world/shop/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cyber_world/shop/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cyber_world/shop/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cyber_world/shop/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cyber_world/shop/templates/author.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cyber_world/shop/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cyber_world/shop/templates/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cyber_world/shop/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cyber_world/shop/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cyber_world/shop/views.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2CIOWk7gn8HBqwHWLgDp1mHXf4O" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="idea.background.editor" value="E:\Pictures\rick-and-morty-5k-art-05-1920x1080.jpg,15,scale,center" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Python\Python Project\DJANGO_PROJECTS\Diplom\cyber_world" />
+      <recent name="E:\Python\Python Project\DJANGO_PROJECTS\Diplom\cyber_world\shop\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Python\Python Project\DJANGO_PROJECTS\Diplom\cyber_world\blog\templates" />
+      <recent name="E:\Python\Python Project\DJANGO_PROJECTS\Diplom\cyber_world\registration\templates\registration" />
+      <recent name="E:\Python\Python Project\DJANGO_PROJECTS\Diplom\cyber_world\blog\templates\blog" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.dz8">
+    <configuration name="ДЗ (16)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Diplom" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Downloads/Telegram Desktop" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Downloads/Telegram Desktop/ДЗ (16).py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ДЗ_04_08" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Diplom" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Downloads/Telegram Desktop" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Downloads/Telegram Desktop/ДЗ_04_08.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="подсчет_единиц_альт_второй_вариант_решения" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Diplom" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Downloads/Telegram Desktop" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Downloads/Telegram Desktop/подсчет_единиц_альт_второй_вариант_решения.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="dz8" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Diplom" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Downloads" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Downloads/dz8.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Diplom" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Diplom" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cyber_world/registration" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cyber_world/registration/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.dz8" />
+        <item itemvalue="Python.ДЗ (16)" />
+        <item itemvalue="Python.ДЗ_04_08" />
+        <item itemvalue="Python.views" />
+        <item itemvalue="Python.подсчет_единиц_альт_второй_вариант_решения" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="11cb15ae-5395-4634-b53d-a6b3cc2cc7c6" name="Changes" comment="" />
+      <created>1658486666506</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1658486666506</updated>
+    </task>
+    <task id="LOCAL-00001" summary="owl fix">
+      <created>1662227762183</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662227762183</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fix">
+      <created>1666690961867</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666690961867</updated>
+    </task>
+    <task id="LOCAL-00003" summary="version 1.0">
+      <created>1667906209893</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667906209893</updated>
+    </task>
+    <task id="LOCAL-00004" summary="version 1.0">
+      <created>1667906870600</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667906870600</updated>
+    </task>
+    <task id="LOCAL-00005" summary="version 1.0">
+      <created>1667906920806</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1667906920806</updated>
+    </task>
+    <task id="LOCAL-00006" summary="version 1.0">
+      <created>1667906980487</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1667906980487</updated>
+    </task>
+    <task id="LOCAL-00007" summary="version 1.0">
+      <created>1667907061206</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1667907061206</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="owl fix" />
+    <MESSAGE value="fix" />
+    <MESSAGE value="version 1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 1.0" />
+  </component>
+</project>

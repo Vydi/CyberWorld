@@ -13,7 +13,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h6>{{posts_item.author}}</h6>
+                <h6><a href="{% url 'author' posts_item.author  %}" style="color: white;">{{posts_item.author}}</a></h6>
                 <h2>{{posts_item.title}}</h2>
             </div>
         </div>
@@ -39,7 +39,8 @@
                         {%if posts_item.author.profile.photo%} <img src="{{posts_item.author.profile.photo.url}}" alt=""
                                                                     style="max-width: 50px; border-radius: 50%; object-fit: cover;">
                             {% endif %}
-                        <h6>{{posts_item.author}}<br><a href="#">@{{posts_item.author}}</a></h6>
+                        <h6>{{posts_item.author}}<br><a href="{% url 'author' posts_item.author  %}"
+                                                        style="color: #7453fc;">@{{posts_item.author}}</a></h6>
                     </span>
                 <p>{{posts_item.content|safe}}</p>
             </div>
